@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+/* Provide sufficient contrast against white background */
+
+.body {
+    background-image: url("./assets/images/tableMapBg.png");
+}
+
+.text-primary {
+    color: #36342E;
+    font-family: Artifika;
+    font-size: 16px;
+}
+
+.text-link .text-primary {
+    color: #BF391F;
+}
+
+.h1 .text-primary {
+    font-size: 40px;
+}
+
+.h2 .text-primary {
+    font-size: 30px;
+}
+
+.h3 .text-link {
+    font-size: 30px;
+}
+
+.btn-primary {
+    color: #36342E;
+    background-color: #D9BE7C;
+    border-radius: 3px 4px;
+}
+
+.btn-dirty {
+    color: #D9BE7C;
+    background-color: #D6B25A;
+    border-radius: 3px 4px;
+}
