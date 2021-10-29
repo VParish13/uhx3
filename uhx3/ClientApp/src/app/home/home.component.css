@@ -1,0 +1,13 @@
+
+#home-screen {
+  background-image: url("../../assets/images/paper_pattern_bg.png");
+}
+
+#home-menu {
+  justify-content: center;
+  display: flex;
+}
+
+#home-vertical-spacer{
+    margin: 10% 0;
+}

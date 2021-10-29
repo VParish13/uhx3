@@ -1,29 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
-/* Provide sufficient contrast against white background */
 
-.body {
-    background-image: url("./assets/images/tableMapBg.png");
+header{
+  /*Removes header background - no white bar*/
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: cover;
 }
 
-.text-primary {
-    color: #36342E;
-    font-family: Artifika;
-    font-size: 16px;
+body {
+  margin: 0;
+  /*Primary background*/
+  background-image: url("./assets/images/table_pattern_bg.jpg");
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-size: auto 100%;
+  /*Primary text*/
+  color: #36342E;
+  font-family: Artifika;
+  font-size: 16px;
 }
 
-.text-link .text-primary {
+
+a{
     color: #BF391F;
 }
 
-.h1 .text-primary {
+h1{
     font-size: 40px;
 }
 
-.h2 .text-primary {
+h2{
     font-size: 30px;
 }
 
-.h3 .text-link {
+h3{
     font-size: 30px;
 }
 
