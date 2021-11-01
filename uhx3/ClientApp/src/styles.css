@@ -8,7 +8,6 @@ header{
 
 body {
   margin: 0;
-  overflow: scroll;
   /*Primary background*/
   background-image: url("./assets/images/paper_pattern_bg.png");
   position: fixed;
