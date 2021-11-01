@@ -1,6 +1,5 @@
 
 #home-screen {
-  background-image: url("../../assets/images/paper_pattern_bg.png");
 }
 
 #home-menu {
@@ -38,7 +37,7 @@
 }
 @media (max-width: 480px) {
   .combat-manager-banner {
-    margin: 35% 19% 25% 0%;
+    margin: 35% 25% 25% 0%;
     width: 400px;
     height: 200px;
   }
