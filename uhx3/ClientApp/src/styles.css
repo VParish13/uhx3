@@ -9,8 +9,8 @@ header{
 body {
   margin: 0;
   /*Primary background*/
-  background-image: url("./assets/images/table_pattern_bg.jpg");
-  position: absolute;
+  background-image: url("./assets/images/paper_pattern_bg.png");
+  position: fixed;
   height: 100vh;
   width: 100vw;
   background-size: auto 100%;
@@ -47,4 +47,25 @@ h3{
     color: #D9BE7C;
     background-color: #D6B25A;
     border-radius: 3px 4px;
+}
+
+.header
+ {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  height: 5%;
+  background-image: url("./assets/images/table_pattern_bg.jpg");
+ }
+
+
+.footer {
+  bottom:0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  height: 5%;
+  background-image: url("./assets/images/table_pattern_bg.jpg");
+
 }

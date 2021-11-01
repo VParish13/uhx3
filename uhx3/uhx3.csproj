@@ -29,7 +29,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\class\addClass\addClass.component.ts" />
+    <None Remove="ClientApp\src\app\class\addClass\addClass.models.ts" />
+    <None Remove="ClientApp\src\app\class\addClass\addClass.module.ts" />
+    <None Remove="ClientApp\src\app\class\addClass\addClass.service.ts" />
+    <None Remove="ClientApp\src\app\class\addClass\index.ts" />
     <None Remove="ClientApp\src\app\home\home.module.ts" />
+    <None Remove="ClientApp\src\app\home\index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\character\editCharacter\" />
+    <Folder Include="ClientApp\src\app\encounter\addEncounter\" />
+    <Folder Include="ClientApp\src\app\npc\addNpc\" />
+    <Folder Include="ClientApp\src\app\race\addRace\" />
+    <Folder Include="ClientApp\src\app\spell-ability\addSpell-Ability\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

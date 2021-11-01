@@ -1,6 +1,5 @@
 
 #home-screen {
-  background-image: url("../../assets/images/paper_pattern_bg.png");
 }
 
 #home-menu {
@@ -8,6 +7,38 @@
   display: flex;
 }
 
-#home-vertical-spacer{
-    margin: 10% 0;
+#home-vertical-spacer {
+  margin: 10% 0;
+}
+
+
+@media (max-width: 1900px) {
+  .combat-manager-banner {
+    margin: 0% 25% 25% 10%;
+    width: 800px;
+    height: 450px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .combat-manager-banner {
+    margin: 0% 25% 25% 10%;
+    width: 600px;
+    height: 350px;
+  }
+}
+@media (max-width: 850px) {
+  .combat-manager-banner {
+    margin: 5% 25% 25% 10%;
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .combat-manager-banner {
+    margin: 35% 25% 25% 0%;
+    width: 400px;
+    height: 200px;
+  }
 }
