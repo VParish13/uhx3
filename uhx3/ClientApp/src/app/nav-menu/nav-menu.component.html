@@ -1,3 +1,18 @@
+<div class="navbar">
+  <div class="navmenu" *ngIf="atHome">
+    <button id="nav-button" routerLink="/">HOME</button>
+    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->ENCOUNTERS</button>
+    <button id="nav-button" (click)="LeaveHome()" routerLink="/AddCharacter">CHARACTERS</button>
+    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->NPCS</button>
+    <button id="nav-button" (click)="LeaveHome()" routerLink="/AddClass">CLASSES</button>
+    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->RACES</button>
+    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->SPELLS/ABILITIES</button>
+  </div>
+  <div class="burger-shield" *ngIf="!atHome">
+    <button id="nav-button" (click)="ReturnHome()" routerLink="/">Hamburger Here</button>
+  </div>
+</div>
+
 <!--<header>
   <nav
     class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"

@@ -1,18 +1,33 @@
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.navbar {
+  justify-content: center;
+  height: 20vh;
 }
 
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.navmenu {
+  justify-content: space-around;
+  padding-top: 4em;
+  display: flex;
+  font-size: 25px;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.burger-shield{
+  justify-content: left;
+  padding-top: 4em;
+  padding-left: 1em;
+  display: flex;
+  font-size: 25px;
+}
+
+a {
+  padding-right: 15px;
+  opacity: 0.7;
+}
+
+a:hover {
+  opacity: 1.0;
+}
+
+#nav-button {
+  background: transparent;
+  border: none !important;
 }
