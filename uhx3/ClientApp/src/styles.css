@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    /*Colors*/
+    --clr-primary-text: #36342E;
+    --clr-highlight-text: #BF391F;
+    --clr-bg-textbox: #F8EDCA;
+    --clr-bg-button: #D9BE7C;
+    --clr-bg-borders: #D6B25A;
+
+    /*Fonts*/
+    --ff-primary: Artifika;
+}
+
 
 header{
   /*Removes header background - no white bar*/
@@ -15,14 +27,15 @@ body {
   width: 100vw;
   background-size: auto 100%;
   /*Primary text*/
-  color: #36342E;
-  font-family: Artifika;
-  font-size: 16px;
+  color: var(--clr-primary-text);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 
 a{
-    color: #BF391F;
+    color: var(--clr-primary-text);
 }
 
 h1{
@@ -38,15 +51,17 @@ h3{
 }
 
 .btn-primary {
-    color: #36342E;
-    background-color: #D9BE7C;
-    border-radius: 3px 4px;
+  color: var(--clr-primary-text);
+  background-color: var(--clr-bg-button);
+  border-radius: 0.1875rem 0.25rem;
+  border-color: var(--clr-bg-borders);
 }
 
 .btn-dirty {
-    color: #D9BE7C;
-    background-color: #D6B25A;
-    border-radius: 3px 4px;
+  color: var(--clr-bg-button);
+  background-color: var(--clr-bg-borders);
+  border-radius: 0.1875rem 0.25rem;
+  border-color: var(--clr-bg-textbox);
 }
 
 .header
@@ -67,5 +82,4 @@ h3{
   margin: 0;
   height: 5%;
   background-image: url("./assets/images/footer_wood_trim.png");
-
 }

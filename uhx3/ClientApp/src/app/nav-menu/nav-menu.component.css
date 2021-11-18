@@ -11,20 +11,21 @@
 }
 
 .burger-shield{
-  justify-content: left;
+  margin-right: auto;
   padding-top: 4em;
   padding-left: 1em;
   display: flex;
   font-size: 25px;
 }
 
-a {
+button {
   padding-right: 15px;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
-a:hover {
+button:hover {
   opacity: 1.0;
+  transition-delay: .2s;
 }
 
 #nav-button {
