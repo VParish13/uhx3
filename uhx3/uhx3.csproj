@@ -36,6 +36,7 @@
     <None Remove="ClientApp\src\app\class\addClass\index.ts" />
     <None Remove="ClientApp\src\app\home\home.module.ts" />
     <None Remove="ClientApp\src\app\home\index.ts" />
+    <None Remove="ClientApp\src\app\nav-menu\nav-menu.module.ts" />
   </ItemGroup>
 
   <ItemGroup>
