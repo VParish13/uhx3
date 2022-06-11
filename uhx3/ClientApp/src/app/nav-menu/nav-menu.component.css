@@ -10,25 +10,55 @@
   font-size: 25px;
 }
 
-.burger-shield{
-  margin-right: auto;
-  padding-top: 4em;
-  padding-left: 1em;
-  display: flex;
-  font-size: 25px;
-}
-
 button {
   padding-right: 15px;
   opacity: 0.6;
 }
 
-button:hover {
-  opacity: 1.0;
-  transition-delay: .2s;
-}
 
 #nav-button {
   background: transparent;
   border: none !important;
+}
+
+#nav-button:hover {
+  background: white;
+  border-radius: 20%;
+  opacity: 0.6;
+  transition: .5s;
+  transition-delay: .1s;
+}
+
+.burger-shield {
+  margin-right: auto;
+  padding-top: 2.5em;
+  padding-left: 2em;
+  font-size: 25px;
+  position: center;
+}
+
+/*.line-burger-shield {
+    width: 30px;
+    height: 3px;
+    background: white;
+    opacity: 0.6;
+    margin: 5px;
+    flex-direction: row;
+    position: center;
+}*/
+
+.circle-outer-burger-shield {
+  background-color: black;
+  border-radius: 50%;
+  height: 71px;
+  width: 71px;
+  position: absolute;
+}
+
+.circle-inner-burger-shield {
+  background-color: darkred;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  position: absolute;
 }
