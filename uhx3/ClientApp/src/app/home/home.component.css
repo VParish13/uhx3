@@ -10,6 +10,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(100px, 100%, 1000px);
-  height: clamp(85px, 100%, 850px);
+  width: clamp(200px, 100%, 950px);
 }

@@ -1,59 +1,15 @@
 <div class="navbar">
-  <div class="navmenu" *ngIf="atHome">
-    <button id="nav-button" routerLink="/">HOME</button> | 
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->ENCOUNTERS</button> | 
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/AddCharacter">CHARACTERS</button> | 
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->NPCS</button> | 
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/AddClass">CLASSES</button> | 
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->RACES</button> | 
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->SPELLS/ABILITIES</button>
+  <div class="burger-shield" *ngIf="!atHome" (click)="ReturnHome()">
+    <figure>
+      <img src="../../assets/images/home_shield_sm.png" routerLink="/" />
+    </figure>
   </div>
-  <div class="burger-shield" *ngIf="!atHome">
-    <button id="nav-button" (click)="ReturnHome()" routerLink="/">Hamburger Here</button>
+  <div class="navmenu" [@slideOut] *ngIf="atHome">
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->ENCOUNTERS</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/AddCharacter">CHARACTERS</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->NPCS</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/AddClass">CLASSES</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->RACES</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->SPELLS/ABILITIES</button>
   </div>
 </div>
-
-<!--<header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
-    <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">uhx3</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
-              >Counter</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>-->
