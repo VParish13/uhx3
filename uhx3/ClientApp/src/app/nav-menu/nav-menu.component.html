@@ -1,19 +1,16 @@
 <div class="navbar">
-  <div class="navmenu" *ngIf="atHome">
-    <button id="nav-button" routerLink="/">HOME</button> | 
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->  ENCOUNTERS</button> |
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/AddCharacter">  CHARACTERS</button> |
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->  NPCS</button> |
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/AddClass">  CLASSES</button> |
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->  RACES</button> |
-    <button id="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->  SPELLS/ABILITIES</button>
-  </div>
   <div class="burger-shield" *ngIf="!atHome" (click)="ReturnHome()">
-    <div class="circle-outer-burger-shield" routerLink="/"></div>
-    <div class="circle-inner-burger-shield" routerLink="/"></div>
-    <div class="line-burger-shield" routerLink="/"></div>
-    <div class="line-burger-shield" routerLink="/"></div>
-    <div class="line-burger-shield" routerLink="/"></div>
+    <figure>
+      <img src="../../assets/images/home_shield_sm.png" routerLink="/" />
+    </figure>
+  </div>
+  <div class="navmenu" [@slideOut] *ngIf="atHome">
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->ENCOUNTERS</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/AddCharacter">CHARACTERS</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->NPCS</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/AddClass">CLASSES</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->RACES</button>&nbsp;|&nbsp;
+    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->SPELLS/ABILITIES</button>
   </div>
 </div>
 

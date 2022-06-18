@@ -1,20 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    /*Colors*/
-    --clr-primary-text: #36342E;
-    --clr-highlight-text: #BF391F;
-    --clr-bg-textbox: #F8EDCA;
-    --clr-bg-button: #D9BE7C;
-    --clr-bg-borders: #D6B25A;
-
-    /*Fonts*/
-    --ff-primary: Artifika;
+  /*Colors*/
+  --clr-primary-text: #36342E;
+  --clr-highlight-text: #BF391F;
+  --clr-bg-textbox: #F8EDCA;
+  --clr-bg-button: #D9BE7C;
+  --clr-bg-borders: #D6B25A;
+  /*Fonts*/
+  --ff-primary: Artifika;
 }
 
 
 header{
   /*Removes header background - no white bar*/
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   background-size: cover;
 }
 
@@ -35,7 +34,7 @@ body {
 
 
 a{
-    color: var(--clr-primary-text);
+    color: var(--clr-highlight-text);
 }
 
 h1{
