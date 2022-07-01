@@ -40,6 +40,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Remove="ClientApp\src\app\character\character.component.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\app\character\character.models.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\app\character\character.module.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\app\character\character.service.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\app\character\index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ClientApp\src\app\character\editCharacter\" />
     <Folder Include="ClientApp\src\app\encounter\addEncounter\" />
     <Folder Include="ClientApp\src\app\npc\addNpc\" />

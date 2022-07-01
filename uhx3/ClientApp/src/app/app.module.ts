@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
+import { CharacterComponent } from './character';
 import { AddCharacterComponent } from './character/addCharacter';
 import { AddClassComponent } from './class/addClass';
 //import { AddEncounterComponent } from './encounter/addEncounter';
@@ -17,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
+    CharacterComponent,
     AddCharacterComponent,
     AddClassComponent,
     //AddEncounterComponent,
@@ -34,7 +36,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'AddCharacter', component: AddCharacterComponent },
+      { path: 'Character', component: CharacterComponent },
       { path: 'AddClass', component: AddClassComponent },
       //{ path: 'AddEncounter', component: AddEncounterComponent },
       //{ path: 'AddNpc', component: AddNpcComponent },
