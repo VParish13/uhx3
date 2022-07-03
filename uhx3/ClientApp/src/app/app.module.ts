@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { MatSliderModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material';
 
 import { CharacterComponent } from './character';
 import { AddCharacterComponent } from './character/addCharacter';
@@ -37,6 +38,7 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     FormsModule,
     MatSliderModule,
+    MatGridListModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'Character', component: CharacterComponent },
