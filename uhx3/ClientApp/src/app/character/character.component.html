@@ -2,12 +2,24 @@
   <div>
     <h1>Characters</h1>
   </div>
-  <div>
-    <mat-grid-list cols="2" rowHeight="2:1">
-      <mat-grid-tile>1</mat-grid-tile>
-      <mat-grid-tile>2</mat-grid-tile>
-      <mat-grid-tile>3</mat-grid-tile>
-      <mat-grid-tile>4</mat-grid-tile>
-    </mat-grid-list>
+  <div class="row">
+    <div class="screen-left">
+      <mat-grid-list cols="1" >
+        <mat-grid-tile *ngFor="let tile of leftTile"
+                       [colspan]="tile.cols"
+                       [rowspan]="tile.rows">
+          {{tile.text}}
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <div class="screen-right">
+      <mat-grid-list cols="4" >
+        <mat-grid-tile *ngFor="let tile of rightTiles"
+                       [colspan]="tile.cols"
+                       [rowspan]="tile.rows">
+          {{tile.text}}
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
   </div>
 </div>

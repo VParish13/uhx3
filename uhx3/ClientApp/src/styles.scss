@@ -37,16 +37,19 @@ a{
     color: var(--clr-highlight-text);
 }
 
-h1{
-    font-size: 40px;
+h1 {
+  font-size: 40px;
+  font-family: var(--ff-primary);
 }
 
-h2{
-    font-size: 30px;
+h2 {
+  font-size: 30px;
+  font-family: var(--ff-primary);
 }
 
-h3{
-    font-size: 30px;
+h3 {
+  font-size: 30px;
+  font-family: var(--ff-primary);
 }
 
 .btn-primary {
