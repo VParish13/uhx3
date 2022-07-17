@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 import { trigger, transition, animate, style } from '@angular/animations';
 
 @Component({
@@ -8,7 +9,7 @@ import { trigger, transition, animate, style } from '@angular/animations';
   animations: [
     trigger('slideOut', [
       transition(':enter', [
-        style({ transform: 'translateY(-70%)' }),
+        style({ transform: 'translateY(-65%)' }),
         animate('100ms', style({ transform: 'translateY(0%)' }))
       ]),
       transition(':leave', [
@@ -27,6 +28,12 @@ export class NavMenuComponent {
 
   ReturnHome() {
     this.atHome = true;
+  }
+
+  ShowMenu() {
+  }
+
+  CloseMenu() {
   }
 }
 

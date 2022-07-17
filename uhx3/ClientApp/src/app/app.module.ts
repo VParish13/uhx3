@@ -5,8 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { MatSliderModule } from '@angular/material';
-import { MatGridListModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { CharacterComponent } from './character';
 import { AddCharacterComponent } from './character/addCharacter';

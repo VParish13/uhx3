@@ -3,18 +3,11 @@
     <h1>Characters</h1>
   </div>
   <div class="row">
-    <div class="screen-left">
-      <mat-grid-list cols="1" >
-        <mat-grid-tile *ngFor="let tile of leftTile"
-                       [colspan]="tile.cols"
-                       [rowspan]="tile.rows">
-          {{tile.text}}
-        </mat-grid-tile>
-      </mat-grid-list>
-    </div>
-    <div class="screen-right">
-      <mat-grid-list cols="4" >
-        <mat-grid-tile *ngFor="let tile of rightTiles"
+    <div class="content">
+      <mat-grid-list cols="4"
+                     rowHeight="1:1"
+                     gutterSize="1.5px">
+        <mat-grid-tile *ngFor="let tile of selectTiles"
                        [colspan]="tile.cols"
                        [rowspan]="tile.rows">
           {{tile.text}}

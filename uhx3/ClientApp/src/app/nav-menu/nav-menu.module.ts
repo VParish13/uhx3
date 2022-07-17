@@ -6,7 +6,7 @@ import { NavMenuComponent } from './nav-menu.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
   ],
   declarations: [
     NavMenuComponent

@@ -1,20 +1,20 @@
 
 .character-screen {
-  padding-top: 200px;
-}
-
-.screen-left {
-  width: 25%;
-}
-
-.screen-right {
-  width: 75%
+  padding-top: 115px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.content {
+  width: 100%;
+  float: right;
+  height: 75vh;
+  background-color: red;
+  opacity: .5;
 }
 
 mat-grid-tile {

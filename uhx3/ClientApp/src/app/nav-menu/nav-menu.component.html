@@ -1,13 +1,35 @@
 <div class="navbar">
-  <div class="burger-shield" *ngIf="!atHome" (click)="ReturnHome()">
-    <figure>
-      <img src="../../assets/images/home_shield_sm.png" routerLink="/" />
-    </figure>
+  <!--<div class="away" *ngIf="!atHome">
+    <div class="burger-shield">
+      <img src="../../assets/images/home_shield_sm.png"/>
+    </div>
+    <div class="sidemenu" tabindex="0">
+      <button class="nav-button" routerLink="/" (click)="ReturnHome()">HOME</button>
+      <br><button class="nav-button" routerLink="/Encounter">ENCOUNTERS</button>
+      <br><button class="nav-button" routerLink="/Character">CHARACTERS</button>
+      <br><button class="nav-button" routerLink="/AddClass">CLASSES</button>
+      <br><button class="nav-button" routerLink="/">RACES</button>
+      <br><button class="nav-button" routerLink="/">SPELLS/ABILITIES</button>
+    </div>
+  </div>-->
+
+  <div class="away" *ngIf="!atHome">
+    <div class="burger-shield" tabindex="0">
+      <img src="../../assets/images/home_shield_sm.png" />
+    </div>
+    <div class="sidemenu" tabindex="0">
+      <button class="nav-button" routerLink="/" (click)="ReturnHome()">HOME</button>
+      <br><button class="nav-button" routerLink="/Encounter">ENCOUNTERS</button>
+      <br><button class="nav-button" routerLink="/Character">CHARACTERS</button>
+      <br><button class="nav-button" routerLink="/AddClass">CLASSES</button>
+      <br><button class="nav-button" routerLink="/">RACES</button>
+      <br><button class="nav-button" routerLink="/">SPELLS/ABILITIES</button>
+    </div>
   </div>
+
   <div class="navmenu" [@slideOut] *ngIf="atHome">
     <button class="nav-button" (click)="LeaveHome()" routerLink="/Encounter">ENCOUNTERS</button>&nbsp;|&nbsp;
     <button class="nav-button" (click)="LeaveHome()" routerLink="/Character">CHARACTERS</button>&nbsp;|&nbsp;
-    <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->NPCS</button>&nbsp;|&nbsp;
     <button class="nav-button" (click)="LeaveHome()" routerLink="/AddClass">CLASSES</button>&nbsp;|&nbsp;
     <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->RACES</button>&nbsp;|&nbsp;
     <button class="nav-button" (click)="LeaveHome()" routerLink="/"><!--<a routerLink="">-->SPELLS/ABILITIES</button>

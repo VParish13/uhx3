@@ -7,14 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class CharacterComponent {
-  leftTile: SelectTile[] = [
-    { text: 'New Character', cols: 1, rows: 1, gutterSize: "10px" }
-  ];
-  rightTiles: SelectTile[] = [
-    { text: 'Char1', cols: 1, rows: 1, gutterSize: "10px" },
-    { text: 'Char2', cols: 1, rows: 1, gutterSize: "10px" },
-    { text: 'Char3', cols: 1, rows: 1, gutterSize: "10px" },
-    { text: 'Char4', cols: 1, rows: 1, gutterSize: "10px" }
+  selectTiles: SelectTile[] = [
+    { text: 'Char1', cols: 1, rows: 1 },
+    { text: 'Char2', cols: 1, rows: 1 },
+    { text: 'Char3', cols: 1, rows: 1 },
+    { text: 'Char4', cols: 1, rows: 1 }
   ];
 }
 
@@ -25,5 +22,4 @@ export interface SelectTile {
   cols: number;
   rows: number;
   text: string;
-  gutterSize: string;
 }
