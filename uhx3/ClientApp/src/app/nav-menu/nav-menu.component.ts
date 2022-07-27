@@ -12,9 +12,7 @@ import { trigger, transition, animate, style } from '@angular/animations';
         style({ transform: 'translateY(-65%)' }),
         animate('100ms', style({ transform: 'translateY(0%)' }))
       ]),
-      transition(':leave', [
-        animate('100ms', style({ transform: 'translateX(100%)' }))
-      ])
+
     ])
   ]
 })
@@ -28,12 +26,6 @@ export class NavMenuComponent {
 
   ReturnHome() {
     this.atHome = true;
-  }
-
-  ShowMenu() {
-  }
-
-  CloseMenu() {
   }
 }
 

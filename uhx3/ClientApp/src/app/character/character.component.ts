@@ -11,7 +11,13 @@ export class CharacterComponent {
     { text: 'Char1', cols: 1, rows: 1 },
     { text: 'Char2', cols: 1, rows: 1 },
     { text: 'Char3', cols: 1, rows: 1 },
-    { text: 'Char4', cols: 1, rows: 1 }
+    { text: 'Char4', cols: 1, rows: 1 },
+    { text: 'Char5', cols: 1, rows: 1 },
+    { text: 'Char6', cols: 1, rows: 1 },
+    { text: 'Char7', cols: 1, rows: 1 },
+    { text: 'Char8', cols: 1, rows: 1 },
+    { text: 'Char9', cols: 1, rows: 1 },
+    { text: 'Char10', cols: 1, rows: 1 },
   ];
 }
 

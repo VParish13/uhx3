@@ -5,8 +5,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSliderModule } from '@angular/material/slider';
+
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { CharacterComponent } from './character';
 import { AddCharacterComponent } from './character/addCharacter';
@@ -38,6 +41,7 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     FormsModule,
     MatSliderModule,
+    MatButtonModule,
     MatGridListModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -47,7 +51,8 @@ import { HomeComponent } from './home/home.component';
       //{ path: 'AddNpc', component: AddNpcComponent },
       //{ path: 'AddRace', component: AddRaceComponent },
       //{ path: 'AddSpell-Ability', component: AddSpell-AbilityComponent },
-    ])
+    ]),
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

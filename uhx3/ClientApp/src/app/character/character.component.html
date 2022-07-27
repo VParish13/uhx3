@@ -2,17 +2,25 @@
   <div>
     <h1>Characters</h1>
   </div>
-  <div class="row">
-    <div class="content">
+  <div>
+    <div class="grid-header-left">
+      <button mat-flat-button color="primary">chip1 x</button>
+      <button mat-flat-button color="primary">chip2 x</button>
+    </div>
+    <div class="grid-header-right">
+      <button mat-stroked-button>Filter -O</button>
+      <button mat-raised-button color="warn">New Character</button>
+    </div>
+    <cdk-virtual-scroll-viewport itemSize="50" class="grid-content">
       <mat-grid-list cols="4"
                      rowHeight="1:1"
-                     gutterSize="1.5px">
+                     gutterSize="8px">
         <mat-grid-tile *ngFor="let tile of selectTiles"
                        [colspan]="tile.cols"
                        [rowspan]="tile.rows">
           {{tile.text}}
         </mat-grid-tile>
       </mat-grid-list>
-    </div>
+    </cdk-virtual-scroll-viewport>
   </div>
 </div>
