@@ -11,18 +11,23 @@ namespace uhx3.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CharacterController : Controller 
+    public class CharactersController : Controller 
     {
         private readonly DataContext _context;
 
-        public CharacterController(DataContext context)
+        public CharactersController(DataContext context)
         {
             _context = context;
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Character>> GetAccount(int id) {
+        public async Task<ActionResult<Character>> GetCharacter(int id) {
             return await _context.Characters.FindAsync(id);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Character>>> GetCharacters() {
+            return await _context.Characters.ToListAsync();
         }
     }
 }
